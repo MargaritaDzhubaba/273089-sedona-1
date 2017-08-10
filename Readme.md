@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Маргарита Джубаба](https://up.htmlacademy.ru/htmlcss/18/user/273089).
-* Наставник: [Александр Калинин] (https://htmlacademy.ru/profile/id311377).
+* Наставник: [Александр Калинин](https://htmlacademy.ru/profile/id311377).
 
 ---
 
