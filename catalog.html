@@ -21,6 +21,7 @@
     </header>
 
     <main>
+      <h1 class="visually-hidden">Страница поиска отелей</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры для поиска отелей</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
@@ -76,11 +77,77 @@
             <input class="btn" type="submit" value="Показать">
           </div>
         </form>
-      	
+      </section>
 
-      	
-      </form>
-    	
+      <section class="sorting">
+        <h2 class="visually-hidden">Сортивка результатов</h2>
+        <span>Найдено: 3</span>
+        <p class="filter-title">Сортировать:</p>
+        <ul class="sorting-filter">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По рейтингу</a></li>
+          <li><a class="icon icon-up" href="#">По возрастанию</a></li>
+          <li><a class="icon icon-down" href="#">По уменьшению</a></li>
+        </ul>
+      </section>
+
+      <section class="results">
+        <h2 class="visually-hidden">Результаты поиска</h2>
+        <article class="result-item">
+          <div class="result-image"><img src="http://placehold.it/135x90" width="135" height="90" alt="Фото отеля Amara resort & SPA"></div>
+          <div class="result-info">
+            <h3><a href="#">Amara resort & SPA</a></h3>
+            <table>
+              <tr>
+                <td>Гостиница</td>
+                <td>от 4000 р.</td>
+              </tr>
+            </table>
+            <a class="result-more btn" href="#">Подробнее</a>
+            <a class="result-book btn" href="#">Забронировать</a>
+          </div>
+          <div class="result-rating">
+            <span>Рейтинг: 8,5</span>
+          </div>
+        </article>
+
+        <article class="result-item">
+          <div class="result-image"><img src="http://placehold.it/135x90" width="135" height="90" alt="Фото отеля Desert Quail Inn"></div>
+          <div class="result-info">
+            <h3><a href="#">Desert Quail Inn</a></h3>
+            <table>
+              <tr>
+                <td>Мотель</td>
+                <td>от 3000 р.</td>
+              </tr>
+            </table>
+            <a class="result-more btn" href="#">Подробнее</a>
+            <a class="result-book btn" href="#">Забронировать</a>
+          </div>
+          <div class="result-rating">
+            <span>Рейтинг: 8,9</span>
+          </div>
+        </article>
+
+        <article class="result-item">
+          <div class="result-image"><img src="http://placehold.it/135x90" width="135" height="90" alt="Фото отеля Villas at Poco Diablo"></div>
+          <div class="result-info">
+            <h3><a href="#">Villas at Poco Diablo</a></h3>
+            <table>
+              <tr>
+                <td>Апартаменты</td>
+                <td>от 2000 р.</td>
+              </tr>
+            </table>
+            <a class="result-more btn" href="#">Подробнее</a>
+            <a class="result-book btn" href="#">Забронировать</a>
+          </div>
+          <div class="result-rating">
+            <span>Рейтинг: 9,2</span>
+          </div>
+        </article>
+      </section>
     </main>
 
     <footer class="main-footer">
