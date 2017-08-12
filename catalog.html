@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+      <nav class="main-navigation-left">
+        <a class="logo">
+            <img src="http://placehold.it/138x70" width="138" height="70" alt="Логотип">
+        </a>
+        <ul>
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видио</a></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтры для поиска отелей</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <div class="filter-checkbox">
+            <p class="filter-title">Инфраструктура:</p>
+            <ul class="checkbox-infrastructure">
+              <li class="checkbox-input">
+                <input type="checkbox" name="pool-field" id="pool" checked>
+                <label class="infrastructure-checkbox" for="pool">Бассейн</label>
+              </li>
+      	       <li class="checkbox-input">
+      	         <input type="checkbox" name="parking-field" id="parking">
+      	         <label class="infrastructure-checkbox" for="parking">Парковка</label>
+      	       </li>
+      	       <li class="checkbox-input">
+      	         <input type="checkbox" name="wifi-field" id="wifi">
+      	         <label class="infrastructure-checkbox" for="wifi">Wi-fi</label>
+      	       </li>
+      	     </ul>
+      	   </div>
+      	   <div>
+      	     <p class="filter-title">Тип размещения:</p>
+      	     <ul class="checkbox-accommodation">
+      	       <li class="checkbox-input">
+      	         <input type="checkbox" name="hotel-field" id="hotel" checked>
+      	         <label class="accommodation-checkbox" for="hotel">Отель</label>
+      	       </li>
+      	       <li class="checkbox-input">
+      	         <input type="checkbox" name="motel-field" id="motel" checked>
+      	         <label class="accommodation-checkbox" for="motel">Мотель</label>
+      	       </li>
+      	       <li class="checkbox-input">
+      	         <input type="checkbox" name="apartments-field" id="apartments" checked>
+      	         <label class="accommodation-checkbox" for="apartments">Апартаменты</label>
+      	       </li>
+      	     </ul>
+      	   </div>
+      	   <div class="range-filter">
+      	     <p class="filter-title">Стоимость в сутки (Р):</p>
+      	     <div class="price-controls">
+      	       <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+      	       <label class="max-price">до <input name="max-price" type="text" value="3 000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+          </div>
+          <div class="submit">
+            <input class="btn" type="submit" value="Показать">
+          </div>
+        </form>
+      	
+
+      	
+      </form>
+    	
+    </main>
+
+    <footer class="main-footer">
+      <b>#visitsedona</b>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul>
+          <li><a class="social-btn" href="#">Twitter</a></li>
+          <li><a class="social-btn" href="#">Facebook</a></li>
+          <li><a class="social-btn" href="#">Youtube</a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <h2 class="visually-hidden">Copyrigh</h2>
+        <p>website by</p>
+        <a href="https://htmlacademy.ru">Htmlacademy</a>
+      </section>
+    </footer>
+  </body>
+</html>
