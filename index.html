@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+
     <header class="main-header">
       <nav class="main-navigation-left">
         <a class="logo">
@@ -18,14 +19,17 @@
         </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="container">
+      
       <section class="welcome-img">
-        <h1 class="invisible header">Добро пожаловать в Седону</h1>
-        <img class="welcome-title" src="http://placehold.it/460x350" width="460" height="350">
-        <img class="welcome-bottom" src="http://placehold.it/1200x57" width="1200" height="57">
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+        <img class="welcome-title" src="http://placehold.it/460x350" width="460" height="350" alt="Welcome to the gorgeous Sedona">
+        <img class="welcome-bottom" src="http://placehold.it/1200x57" width="1200" height="57" alt="">
       </section>
+      
       <section class="reasons">
-        <h2 class="invisible header">Преимущества Седоны</h2>
+        <h2 class="visually-hidden">Причины приехать в Седону</h2>
         <p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
         <p>Рассмотрим 5 причин, по которым седона круче,чем гранд Каньон!</p>
           <section class="reason-with-pictures">
@@ -38,23 +42,27 @@
               <img src="http://placehold.it/800x255" width="800" height="255" alt="town">
             </div>
           </section>
+          
           <section class="features">
-            <ul>
-              <li>
+            <h2 class="visually-hidden">Преимущества Седоны</h2>
+            <ul class="features-list">
+              <li class="feature-item">
                 <h3>Жилье</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li>
+              <li class="feature-item">
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
               </li>
-              <li>
+              <li class="feature-item">
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>  
           </section>
+          
           <section class="reason-with-pictures">
+            <h2 class="visually-hidden">Причины приехать в Седону</h2>
             <div class="reason-img">
               <img src="http://placehold.it/800x255" width="800" height="255" alt="bridge">
             </div>
@@ -64,28 +72,83 @@
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </section>
+          
           <section class="reason">
-          <ul>
-            <li>
-              <h3>Небольшая площадь</h3>
-              <span>-№3-</span>
-              <p>Все достопримечательности находятся очень близко</p>
-            </li>
-            <li>
-              <h3>Красивая дорога</h3>
-              <span>-№4-</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </li>
-            <li>
-              <h3>Мало туристов</h3>
-              <span>-№5-</span>
-              <p>Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
-          </ul>
-        </section>
+            <ul class="reason-list">
+              <li class="reason-item">
+                <h3>Небольшая площадь</h3>
+                <span>-№3-</span>
+                <p>Все достопримечательности находятся очень близко</p>
+              </li>
+              <li class="reason-item">
+                <h3>Красивая дорога</h3>
+                <span>-№4-</span>
+                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              </li>
+              <li class="reason-item">
+                <h3>Мало туристов</h3>
+                <span>-№5-</span>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </ul>
+          </section>
+      </section>
+
+      <section class="hotel-sarch">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="btn" type="button">Поиск гостиницы в Седоне</button>
+        <form class="sarch-form" action="https://echo.htmlacademy.ru" method="post">
+          <label>
+            Дата заезда:
+            <input type="text" name="arrival" placeholder="24 апреля 2017">
+          </label>
+          <label>
+            Дата выезда:
+            <input type="text" name="departure" placeholder="4 июня 2017">
+          </label>
+          <div>
+            <label for="amount-of-adults">
+              Взрослые:
+            </label>  
+            <span>-</span>
+            <input type="text" name="adult"  id="amount-of-adults" value="2">
+            <span>+</span>
+          </div>
+          <div>
+            <label for="amount-of-children">
+              Дети:
+            </label>
+            <span>-</span>
+            <input type="text" name="child" id="amount-of-children" value="0">
+            <span>+</span>
+          </div>
+          <input class="btn" type="submit" value="Найти">
+        </form>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <div id="map" class="map"></div>
+        <!-- <img src="http://placehold.it/1200x470" width="1200" height="470" alt="Карта"> -->
       </section>
     </main>
+
     <footer class="main-footer">
+      <b>#visitsedona</b>
+      <section class="social">
+        <h2 class="visually-hidden">Социальные сети</h2>
+        <ul>
+          <li><a class="social-btn" href="#">Twitter</a></li>
+          <li><a class="social-btn" href="#">Facebook</a></li>
+          <li><a class="social-btn" href="#">Youtube</a></li>
+        </ul>
+      </section>
+      <section class="copyright">
+        <h2 class="visually-hidden">Copyrigh</h2>
+        <p>website by</p>
+        <a href="https://htmlacademy.ru">Htmlacademy</a>
+      </section>
     </footer>
   </body>
 </html>
