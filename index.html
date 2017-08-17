@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
       <nav class="main-navigation">
         <a class="logo">
-          <img src="http://placehold.it/138x70" width="138" height="70" alt="Логотип">
+          <img src="img/Sedona-logo.png" width="138" height="70" alt="Логотип">
         </a>
         <ul>
           <li><a href="#">Информация</a></li>
@@ -24,8 +27,8 @@
       
       <section class="welcome-img">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <img class="welcome-title" src="http://placehold.it/460x350" width="460" height="350" alt="Welcome to the gorgeous Sedona">
-        <img class="welcome-bottom" src="http://placehold.it/1200x57" width="1200" height="57" alt="">
+        <img class="welcome-title" src="img/Welcom-to-Sedona.png" width="458" height="352" alt="Welcome to the gorgeous Sedona">
+        <img class="welcome-bottom" src="img/background-photo-index-bottom.png" min-width="1200" height="57" alt="">
       </section>
       
       <section class="reasons">
@@ -39,7 +42,7 @@
               <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reason-img">
-              <img src="http://placehold.it/800x255" width="800" height="255" alt="town">
+              <img src="img/reason-1-town.png" width="800" height="256" alt="town">
             </div>
           </section>
           
@@ -48,14 +51,17 @@
             <ul class="features-list">
               <li class="feature-item">
                 <h3>Жилье</h3>
+                <img src="img/icon-1.svg" alt="housing">
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="feature-item">
                 <h3>Еда</h3>
+                <img src="img/icon-2.svg" alt="burger">
                 <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
               </li>
               <li class="feature-item">
                 <h3>Сувениры</h3>
+                <img src="img/icon-3.svg" alt="souvenir">
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
@@ -64,7 +70,7 @@
           <section class="reason-with-pictures">
             <h2 class="visually-hidden">Причины приехать в Седону</h2>
             <div class="reason-img">
-              <img src="http://placehold.it/800x255" width="800" height="255" alt="bridge">
+              <img src="img/reason-2-bridge.png" width="800" height="256" alt="bridge">
             </div>
             <div class="reason-information">
               <h3>Там есть мост дьявола</h3>
@@ -94,61 +100,67 @@
           </section>
       </section>
 
-      <section class="hotel-sarch">
+      <section class="">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="btn" type="button">Поиск гостиницы в Седоне</button>
-        <form class="sarch-form" action="https://echo.htmlacademy.ru" method="post">
+      </section>
+      <section class="modal modal-search">
+        <h2 class="visually-hidden">Форма поиска подходящего отеля в Седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
           <label>
             Дата заезда:
-            <input type="text" name="arrival" placeholder="24 апреля 2017">
-          </label>
-          <label>
-            Дата выезда:
-            <input type="text" name="departure" placeholder="4 июня 2017">
-          </label>
-          <div>
+            <input type="text" name="arrival" value="" placeholder="24 апреля 2017">
+            </label>
+          </p>
+          <p>
+            <label>
+              Дата выезда:
+              <input type="text" name="departure" value="" placeholder="4 июня 2017">
+            </label>
+          </p>
+          <p>
             <label for="amount-of-adults">
               Взрослые:
             </label>
-            <span>-</span>
+            <button>-</button>
             <input type="text" name="adult"  id="amount-of-adults" value="2">
-            <span>+</span>
-          </div>
-          <div>
+            <button>+</button>
+          </p>
+          <p>
             <label for="amount-of-children">
               Дети:
             </label>
-            <span>-</span>
+            <button>-</button>
             <input type="text" name="child" id="amount-of-children" value="0">
-            <span>+</span>
-          </div>
-          <input class="btn" type="submit" value="Найти">
+            <button>+</button>
+          </p>
+          <p>
+            <input class="btn" type="submit" value="Найти">
+          </p>  
         </form>
       </section>
 
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
+      <section class="location">
+        <h2 class="visually-hidden">Карта Седоны</h2>
         <div id="map" class="map"></div>
-        <!-- <img src="http://placehold.it/1200x470" width="1200" height="470" alt="Карта"> -->
       </section>
     </main>
 
     <footer class="main-footer">
-      <p><b>#visitsedona</b><b>
-      <section class="social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+      <b>#visitsedona</b>
+      <div class="footer-social">
         <ul>
           <li><a class="social-btn" href="#">Twitter</a></li>
           <li><a class="social-btn" href="#">Facebook</a></li>
           <li><a class="social-btn" href="#">Youtube</a></li>
         </ul>
-      </section>
-      <section class="copyright">
-        <h2 class="visually-hidden">Copyrigh</h2>
-        <p>website by</p>
-        <a href="https://htmlacademy.ru">Htmlacademy</a>
-      </section>
+      </div>
+      <p class="footer-copyright">
+        <b>website by</b>
+        <a href="https://htmlacademy.ru" class="copyright-image">Html Academy</a>
+      </p>
     </footer>
   </body>
 </html>

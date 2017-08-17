@@ -1,0 +1,37 @@
+body {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+	font-family: "PT Sans", "Arial", Sans-serif;
+	color: #333333;
+}
+
+
+
+.welcome-img {
+	background: url("../img/background-photo-index.jpg") no-repeat;
+}
+
+.map {
+	width: 1200px;
+	height: 473px;
+
+	background: url("../img/map.jpg") no-repeat;
+}
+
+.copyright-image {
+	background: url("../img/logo-htmlacademy.svg") no-repeat;
+}
+
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}

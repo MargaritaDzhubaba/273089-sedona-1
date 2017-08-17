@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
-      <nav class="main-navigation-left">
+      <nav class="main-navigation">
         <a href="index.html" class="logo">
-            <img src="http://placehold.it/138x70" width="138" height="70" alt="Логотип">
+            <img src="img/Sedona-logo.png" width="138" height="70" alt="Логотип">
         </a>
         <ul>
           <li><a href="#">Информация</a></li>
@@ -29,15 +32,15 @@
             <p class="filter-title">Инфраструктура:</p>
             <ul class="checkbox-infrastructure">
               <li class="checkbox-input">
-                <input type="checkbox" name="pool-field" id="pool" checked>
+                <input type="checkbox" name="pool-field" id="pool" value="" checked>
                 <label class="infrastructure-checkbox" for="pool">Бассейн</label>
               </li>
       	       <li class="checkbox-input">
-      	         <input type="checkbox" name="parking-field" id="parking">
+      	         <input type="checkbox" name="parking-field" id="parking" value="" >
       	         <label class="infrastructure-checkbox" for="parking">Парковка</label>
       	       </li>
       	       <li class="checkbox-input">
-      	         <input type="checkbox" name="wifi-field" id="wifi">
+      	         <input type="checkbox" name="wifi-field" id="wifi" value="" >
       	         <label class="infrastructure-checkbox" for="wifi">Wi-fi</label>
       	       </li>
       	     </ul>
@@ -46,15 +49,15 @@
       	     <p class="filter-title">Тип размещения:</p>
       	     <ul class="checkbox-accommodation">
       	       <li class="checkbox-input">
-      	         <input type="checkbox" name="hotel-field" id="hotel" checked>
+      	         <input type="checkbox" name="hotel-field" id="hotel" value="" checked>
       	         <label class="accommodation-checkbox" for="hotel">Отель</label>
       	       </li>
       	       <li class="checkbox-input">
-      	         <input type="checkbox" name="motel-field" id="motel" checked>
+      	         <input type="checkbox" name="motel-field" id="motel" value="" checked>
       	         <label class="accommodation-checkbox" for="motel">Мотель</label>
       	       </li>
       	       <li class="checkbox-input">
-      	         <input type="checkbox" name="apartments-field" id="apartments" checked>
+      	         <input type="checkbox" name="apartments-field" id="apartments" value="" checked>
       	         <label class="accommodation-checkbox" for="apartments">Апартаменты</label>
       	       </li>
       	     </ul>
@@ -95,7 +98,7 @@
       <section class="results">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <article class="result-item">
-          <div class="result-image"><img src="http://placehold.it/135x90" width="135" height="90" alt="Фото отеля Amara resort & SPA"></div>
+          <div class="result-image"><img src="img/Hotel-1-image.jpg" width="135" height="90" alt="Фото отеля Amara resort & SPA"></div>
           <div class="result-info">
             <h3><a href="#">Amara resort & SPA</a></h3>
             <table>
@@ -113,7 +116,7 @@
         </article>
 
         <article class="result-item">
-          <div class="result-image"><img src="http://placehold.it/135x90" width="135" height="90" alt="Фото отеля Desert Quail Inn"></div>
+          <div class="result-image"><img src="img/Hotel-2-image.jpg" width="135" height="90" alt="Фото отеля Desert Quail Inn"></div>
           <div class="result-info">
             <h3><a href="#">Desert Quail Inn</a></h3>
             <table>
@@ -131,7 +134,7 @@
         </article>
 
         <article class="result-item">
-          <div class="result-image"><img src="http://placehold.it/135x90" width="135" height="90" alt="Фото отеля Villas at Poco Diablo"></div>
+          <div class="result-image"><img src="img/Hotel-3-image.jpg" width="135" height="90" alt="Фото отеля Villas at Poco Diablo"></div>
           <div class="result-info">
             <h3><a href="#">Villas at Poco Diablo</a></h3>
             <table>
@@ -152,19 +155,17 @@
 
     <footer class="main-footer">
       <b>#visitsedona</b>
-      <section class="social">
-        <h2 class="visually-hidden">Социальные сети</h2>
+      <div class="footer-social">
         <ul>
           <li><a class="social-btn" href="#">Twitter</a></li>
           <li><a class="social-btn" href="#">Facebook</a></li>
           <li><a class="social-btn" href="#">Youtube</a></li>
         </ul>
-      </section>
-      <section class="copyright">
-        <h2 class="visually-hidden">Copyrigh</h2>
-        <p>website by</p>
-        <a href="https://htmlacademy.ru">Htmlacademy</a>
-      </section>
+      </div>
+      <p class="footer-copyright">
+        <b>website by</b>
+        <a href="https://htmlacademy.ru">Html Academy</a>
+      </p>
     </footer>
   </body>
 </html>
