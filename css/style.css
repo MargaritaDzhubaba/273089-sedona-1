@@ -1,26 +1,41 @@
 body {
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: normal;
 	line-height: 21px;
 	font-family: "PT Sans", "Arial", Sans-serif;
 	color: #333333;
 }
 
-
-
-.welcome-img {
-	background: url("../img/background-photo-index.jpg") no-repeat;
+.search-title {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 24px;
+	font-family: "PT Sans", "Arial", Sans-serif;
+	color: #000;
 }
 
-.map {
-	width: 1200px;
-	height: 473px;
-
-	background: url("../img/map.jpg") no-repeat;
+.reason-title,
+.feature-title {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 21px;
+	font-family: "PT Sans", "Arial", Sans-serif;
+	color: #000;
+	text-transform: uppercase;
 }
 
-.copyright-image {
-	background: url("../img/logo-htmlacademy.svg") no-repeat;
+.reason-title-white {
+	color: #fff;
+}
+
+.result-title{
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	font-family: "PT Sans", "Arial", Sans-serif;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
 .visually-hidden {
@@ -35,3 +50,22 @@ body {
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+.welcome-img {
+	background: url("../img/background-photo-index.jpg") no-repeat;
+}
+
+.map {
+	width: 1200px;
+	height: 473px;
+
+	background: url("../img/map.jpg") no-repeat;
+}
+
+/*.social-btn {
+	width: 46px;
+	height: 48px;
+
+	background-color: #81b3d2;
+}*/
+
