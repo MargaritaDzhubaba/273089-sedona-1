@@ -1,4 +1,11 @@
+* {
+	outline: 2px solid red;
+}
+
 body {
+	min-width: 1200px;
+	min-height: 2762px;
+
 	margin: 0;
 	padding: 0;
 
@@ -34,6 +41,12 @@ a {
 /*Стилизация хедера*/
 
 .main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: relative;
+
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
@@ -41,8 +54,51 @@ a {
 	background-color: #ffffff;
 }
 
+.container {
+	width: 1056px;
+	padding: 0 72px;
+	margin: 0 auto;
+}
+
+.logo {
+	position: absolute;
+	order: 2;
+	width: 138px;
+	height: 70px;
+}
+
 .site-navigation {
+	display: flex;
+
+	width: 1056px;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+}
+
+.site-navigation li {
+	width: 211px;
+	padding: 15px 0;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+	text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+	text-align: right;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 211px;
+	padding-left: 60px;
+}
+
+.site-navigation li:nth-child(3) {
+	padding-right: 60px;
 }
 
 .site-navigation a {
@@ -69,31 +125,79 @@ a {
 /*Стилизация главной страницы*/
 
 .welcome-img {
-	position: relative;
-	background: #a4bdcf url(../img/background-photo-index.jpg) top center no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	margin: 0 auto;
+	margin-bottom: 61px;
+	width: 1200px;
 
+	background: #a4bdcf url(../img/background-photo-index.jpg) 0 -56px no-repeat;
+}
+
+.welcome-title {
+	padding: 76px 0 23px 0;
 }
 
 .background-bottom {
-	position: absolute;
-	bottom: 0;
-	left: 0;
+	width: 1200px;
+	height: 57px;
 	background: url(../img/background-photo-index-bottom.png) no-repeat;
 }
 
-.reasons p {
+.reasons {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.reasons-description {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.reasons-description p {
+	width: 500px;
+	margin: 0;
+	padding: 0;
+
 	line-height: 26px;
 	text-align: center;
 }
 
-.reasons b {
+.reasons-description p:nth-child(1) {
+	margin-bottom: 23px;
+}
+
+.reasons-description p:nth-child(2) {
+	margin-bottom: 50px;
+}
+
+.reasons-description b {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
 	color: #000000;
 }
 
+.reason-with-pictures {
+	margin-bottom: 60px;
+}
+
+.reason-1-flex {
+	display: flex;
+
+	background: #81b3d2 url(../img/reason-1-town.jpg) 400px 0 no-repeat;
+}
+
 .reason-information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 400px;
+
 	color: #ffffff;
 
 	text-align: center;
@@ -109,15 +213,70 @@ a {
 	line-height: 21px;
 }
 
+.reason-title {
+	width: 140px;
+
+	margin: 0;
+	margin-bottom: 24px;
+	padding-top: 48px;
+}
+
+.reason-information span {
+	margin-bottom: 20px;
+}
+
+.reason-information p {
+	width: 280px;
+	margin: 0;
+	margin-bottom: 58px;
+	padding: 0;
+}
+
+.features {
+	margin-bottom: 85px;
+}
+
 .features-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
 .feature-item {
+	position: relative;
+
+	width: 400px;
+
 	text-align: center;
 }
 
+.features-list  li:nth-child(1)::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 50%;
+
+	width: 75px;
+	height: 72px;
+
+	background: url(../img/house.svg) no-repeat;
+
+}
+
+.feature-title {
+	margin: 0;
+	margin-bottom: 26px;
+	padding: 0;
+	padding-top: 26px;
+}
+
 .reason-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
@@ -296,12 +455,16 @@ a {
 	line-height: 26px;
 }
 
-.footer-copyright svg:hover,
-.footer-copyright svg:focus {
+.footer-copyright a {
+	fill: #231f20;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
 	fill: #81b3d2;
 }
 
-.footer-copyright svg:active {
+.footer-copyright a:active {
 	fill: #bdbbbc;
 }
 
