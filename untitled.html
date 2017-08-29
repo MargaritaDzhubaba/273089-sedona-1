@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style1.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+ <section class="modal modal-search">
+          <h2 class="visually-hidden">Форма поиска подходящего отеля в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="search-container">
+              <p>
+                <label class="form-label" for="arrival">Дата заезда:</label>
+                <input class="form-input" type="text" name="arrival" id="arrival" value="" placeholder="24 апреля 2017">
+              </p>
+              <p>
+                  <label class="form-label" for="departure">Дата выезда:</label>
+                  <input class="form-input" type="text" name="departure" id="departure" value="" placeholder="4 июня 2017">
+              </p>
+              <div class="count-container">
+                <p>
+                  <label class="form-label" for="amount-of-adults">Взрослые:</label>
+                  <input class="btn minus" type="button" value="-"></input>
+                  <input class="form-input form-amount" type="text" name="adult"  id="amount-of-adults" value="2">
+                  <input class="btn plus" type="button" value="+"></input>
+                </p>
+                <p>
+                  <label class="form-label" for="amount-of-children">Дети:</label>
+                  <button class="btn" type="button" value="-"></button>
+                  <input class="form-input form-amount" type="text" name="child" id="amount-of-children" value="0">
+                  <button class="btn" type="button" value="+"></button>
+                </p>
+              </div> 
+              <p>
+                <input class="btn btn-submit" type="submit" value="Найти">
+              </p> 
+            </div>
+          </form>
+        </section>
+      </section>
