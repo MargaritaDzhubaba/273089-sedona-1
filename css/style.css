@@ -125,7 +125,7 @@ input[type="radio"].visually-hidden {
 .site-navigation li:nth-child(3) {
 	box-sizing: border-box; /*как вариант выравнивания пунктов меню*/
 	
-	padding-right: 32px; /*как вариант выравнивания пунктов меню*/
+	padding-right: 34px; /*как вариант выравнивания пунктов меню*/
 }
 
 .site-navigation a {
@@ -289,7 +289,7 @@ main {
 
 
 .features {
-	margin-bottom: 81px;
+	margin-bottom: 82px;
 }
 
 .features-list {
@@ -345,7 +345,7 @@ main {
 	content: "";
 
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 168px;
 
 	width: 64px;
@@ -358,7 +358,7 @@ main {
 	margin: 0;
 	margin-bottom: 23px;
 	padding: 0;
-	padding-top: 106px;
+	padding-top: 105px;
 }
 
 .feature-item p {
@@ -863,7 +863,7 @@ main {
 .filters {
 	background: #5b6f81 url(../img/filter-background.jpg) 0 50% no-repeat;
 
-	margin-bottom: 31px;
+	margin-bottom: 32px;
 
 	width: 100%;
 	min-height: 217px;
@@ -873,8 +873,6 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: start;
-
-	margin-bottom: 32px;
 }
 
 .filter-form .filter-checkbox {
@@ -923,62 +921,128 @@ main {
 }
 
 .filter-form .range-filter {
-	display: flex;
-	flex-direction: column;
-	/*align-items: center;*/
-
 	margin-left: auto;
-	width: 317px;
+	width: 318px;
+
+	color: #ffffff;
+
+	text-transform: uppercase;
 }
 
 .range-filter .filter-title {
 	margin-bottom: 9px;
+
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 21px;
+}
+
+.price-controls {
+	position: relative;
+
+	height: 32px;
+	margin-bottom: 20px;
+
+	font-size: 0;
+
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+}
+
+.price-controls::after {
+	content: "";
+	position: absolute;
+
+	top: 5px;
+	left: 50%;
+
+	width: 2px;
+	height: 22px;
+
+	background-color: #ffffff;
 }
 
 .price-controls label {
-	width: ;
-	padding: ;
+	display: inline-block;
+
+	font-size: 14px;
+	vertical-align: top;
+	line-height: 33px;
+
+	cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+	width: 81px;
+	padding-left: 65px;
 }
 
 .price-controls input {
+	width: 50px;
 	margin: 0;
-	margin-right: -4px;
-	margin-bottom: 55px;
-	padding: 6px 0;
-	padding-left: 65px;
 
-	width: 90px;
-	height: 20px;
+	font: inherit;
 
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 21px;
+	color: inherit;
 
-	color: #ffffff;
-
-	background: transparent;
-	border: 2px solid #ffffff;
+	background: none;
+	border: none;
+	outline: none;
 }
 
-.price-controls .min-price {
-	border-right: none;
+.range-controls {
+	position: relative;
+
+	margin-bottom: 32px;
 }
 
-.price-controls .max-price {
-	border-left: none;
+.range-controls .scale {
+	height: 2px;
+
+	background-color: rgba(255, 255, 255, 0.3);
 }
 
-.range-filter .submit {
-	align-self: center;
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+
+	background-color: #ffffff;
 }
 
-.filters .btn {
-	margin: 0;
-	padding: 6px 30px;
+.toggle {
+	position: absolute;
+	top: -9px;
 
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 21px;
+	width: 4px;
+	height: 4px;
+
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.min-toggle {
+	left: 0;
+}
+
+.max-toggle {
+	left: 80%;
+}
+
+.toggle:hover,
+.toggle:focus {
+	background-color: #1c4f80;
+}
+
+.btn-transparent {
+	display: block;
+	margin: 0 auto;
+	padding: 6px 35px;
+
+	font: inherit;
 
 	color: #ffffff;
 
@@ -986,10 +1050,12 @@ main {
 
 	background: transparent;
 	border: 2px solid #ffffff;
+	border-radius: 2px;
+	/*outline: none;*/
 }
 
-.filters .btn:hover,
-.filters .btn:focus {
+.btn-transparent:hover,
+.btn-transparent:focus {
 	color: #000000;
 
 	background: #ffffff;
@@ -1267,3 +1333,4 @@ main {
 
 	background-color: #f2f2f2;
 }
+
