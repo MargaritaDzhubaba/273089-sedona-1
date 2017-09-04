@@ -9,7 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "PT Sans", "Arial", Sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
@@ -141,8 +141,6 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:active {
 	color: rgba(0, 0, 0, 0.3);
-
-	/*outline: none;*/
 }
 
 .site-navigation .active {
@@ -200,8 +198,10 @@ main {
 }
 
 .reasons-description p:nth-child(1) {
+	margin: 0 auto;
 	margin-bottom: 23px;
-	padding: 0 380px;
+
+	max-width: 450px;
 }
 
 .reasons-description p:nth-child(2) {
@@ -212,6 +212,7 @@ main {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
+
 	color: #000000;
 }
 
@@ -315,7 +316,7 @@ main {
 	text-align: center;
 }
 
-.features-list  li:nth-child(1)::before {
+.features-list li:nth-child(1)::before {
 	content: "";
 
 	position: absolute;
@@ -328,7 +329,7 @@ main {
 	background: url(../img/house.svg) no-repeat;
 }
 
-.features-list  li:nth-child(2)::before {
+.features-list li:nth-child(2)::before {
 	content: "";
 
 	position: absolute;
@@ -341,7 +342,7 @@ main {
 	background: url(../img/burger.svg) no-repeat;
 }
 
-.features-list  li:nth-child(3)::before {
+.features-list li:nth-child(3)::before {
 	content: "";
 
 	position: absolute;
@@ -477,7 +478,7 @@ main {
 .search-hotel .btn {
 	padding: 31px 140px 29px;
 
-	font-family: "PT Sans", "Arial", Sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -570,7 +571,7 @@ main {
 	padding-left: 10px;
 	padding-right: 41px;
 
-	font-family: "PT Sans", "Arial", Sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 700;
@@ -773,7 +774,7 @@ main {
 
 }
 
-.footer-hashtag  b {
+.footer-hashtag b {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
@@ -856,8 +857,6 @@ main {
 .footer-copyright a:active {
 	fill: #bdbbbc;
 }
-
-
 
 /* Стилизация страницы catalog.html */
 .filters {
@@ -1093,8 +1092,8 @@ main {
 
 .btn-transparent {
 	display: block;
-	margin: 0 auto;
-	padding: 6px 35px;
+	margin: 0 27%;
+	padding: 6px 34px 5px 33px;
 
 	font: inherit;
 
@@ -1183,11 +1182,12 @@ main {
 
 .sorting-type .sorting-type-underline::after {
 	content: "";
-    	position: absolute;
-   	left: 0;
-    	right: 0;
-    	bottom: -1px;
-    	border-top: 1px dotted #81b3d2;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+
+	border-top: 1px dotted #81b3d2;
 }
 
 .sorting-filter li:nth-child(4) {
@@ -1387,4 +1387,3 @@ main {
 
 	background-color: #f2f2f2;
 }
-
