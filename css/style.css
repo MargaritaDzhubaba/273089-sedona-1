@@ -880,9 +880,9 @@ main {
 	margin-right: 119px;
 }
 
-/*.filter-form .filter-checkbox:nth-child(2) {
-	margin-right: 259px;
-}*/
+.filter-form .filter-checkbox:nth-child(2) {
+	margin-right: 0;
+}
 
 .filters .filter-title {
 	margin: 0;
@@ -901,6 +901,45 @@ main {
 	margin-bottom: 25px;
 }
 
+.infrastructure-checkbox,
+.accommodation-checkbox {
+	position: relative;
+
+	padding-left: 42px;
+
+	cursor: pointer;
+}
+
+.infrastructure-checkbox input[type="checkbox"] + .checkbox-indicator,
+.accommodation-checkbox input[type="checkbox"] + .checkbox-indicator {
+	position: absolute;
+	top: -4px;
+	left: -1px;
+
+	width: 23px;
+	height: 23px;
+
+	background: url(../img/checkbox-off.svg) no-repeat;
+}
+
+.infrastructure-checkbox input[type="checkbox"]:focus + .checkbox-indicator,
+.accommodation-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+	outline: thin dotted;
+	outline: 5px auto -webkit-focus-ring-color;
+}
+
+.infrastructure-checkbox input[type="checkbox"]:checked + .checkbox-indicator,
+.accommodation-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+	position: absolute;
+	top: -4px;
+	left: -1px;
+
+	width: 27px;
+	height: 23px;
+
+	background: url(../img/checkbox-on.svg) no-repeat;
+}
+
 .checkbox-infrastructure,
 .checkbox-accommodation {
 	margin: 0;
@@ -911,13 +950,28 @@ main {
 	color:#ffffff;
 }
 
-.checkbox-input input,
-.checkbox-input label {
-	cursor: pointer;
+.infrastructure-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator,
+.accommodation-checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+	position: absolute;
+	top: -4px;
+	left: -1px;
+
+	width: 27px;
+	height: 23px;
+
+	background: url(../img/checkbox-on-disabled.svg) no-repeat;
 }
 
-.checkbox-input:disabled + label {
-	color: #727171;
+.infrastructure-checkbox input[type="checkbox"]:disabled + .checkbox-indicator,
+.accommodation-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+	position: absolute;
+	top: -4px;
+	left: -1px;
+
+	width: 27px;
+	height: 23px;
+
+	background: url(../img/checkbox-off-disabled.svg) no-repeat;
 }
 
 .filter-form .range-filter {
