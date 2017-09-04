@@ -654,15 +654,15 @@ main {
 .counter .btn:focus {
 	color: #000000;
 
-	background-color: #ebebeb;
-	border: 2px solid #ebebeb;
+	background-color: #f2f2f2;
+	border: 2px solid #f2f2f2;
 }
 
 .counter .btn:active {
 	color: #81b3d2;
 
-	background-color: #ffffff;
-	border: 2px solid #e5e5e5;
+	background-color: #f2f2f2;
+	border: 2px solid #f2f2f2;
 }
 
 .counter .form-amount {
