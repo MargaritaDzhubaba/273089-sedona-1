@@ -1,10 +1,5 @@
-* {
-	/*outline: 2px solid red;*/
-}
-
 body {
 	min-width: 1200px;
-	/*min-height: 2762px;*/
 
 	margin: 0;
 	padding: 0;
@@ -136,7 +131,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a:focus {
 	color:  #81b3d2;
 
-	/*outline: none;*/
+	outline: none;
 }
 
 .site-navigation a:active {
@@ -514,6 +509,8 @@ main {
 
 .search-map {
 	position: relative;
+
+	overflow: hidden;
 }
 
 .search-hotel-popup {
@@ -627,24 +624,30 @@ main {
 	/*outline: none;*/
 }
 
-.search-form-item-date svg {
+.search-hotel-popup .calendar-container {
 	position: absolute;
-	top: 8px;
+	top: 50%;
 	right: 9px;
 
-	width: 21px;
-	height: 22px;
-
-	fill: #c2c2c2;
+	padding: 0;
+	font-size: 0;
+	background: none;
+	border: none;
+	transform: translateY(-50%);
 }
 
-.search-form-item-date svg:hover,
-.search-form-item-date svg:focus {
-	fill: #000000;
+.calendar-container:hover path,
+.calendar-container:focus path {
+	fill: #000;
 }
 
-.search-form-item-date svg:active {
-	fill: #81b3d2
+.calendar-container:active path {
+	fill: #81b3d2;
+}
+
+.calendar-container:focus,
+.calendar-container:active {
+	outline: none;
 }
 
 .search-form .counter {
@@ -676,6 +679,8 @@ main {
 	border: 2px solid #f2f2f2;
 
 	cursor: pointer;
+
+	outline: none;
 }
 
 .counter .btn:hover,
