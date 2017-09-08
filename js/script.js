@@ -1,8 +1,6 @@
 var link = document.querySelector(".search-hotel-btn");
 var modal = document.querySelector(".search-hotel-popup");
 
-var searchButton = document.querySelector(".search-hotel-btn");
-var searchForm = document.querySelector(".search-hotel-popup");
 var lessButton = document.querySelectorAll(".counter .minus");
 var moreButton = document.querySelectorAll(".counter .plus");
 
