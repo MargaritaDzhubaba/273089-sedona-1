@@ -1,5 +1,8 @@
-var searchForm = document.querySelector(".search-hotel-popup");
+var link = document.querySelector(".search-hotel-btn");
+var modal = document.querySelector(".search-hotel-popup");
+
 var searchButton = document.querySelector(".search-hotel-btn");
+var searchForm = document.querySelector(".search-hotel-popup");
 var lessButton = document.querySelectorAll(".counter .minus");
 var moreButton = document.querySelectorAll(".counter .plus");
 
@@ -18,11 +21,11 @@ var childrens = {
   childrenTotal: childrenInput.value
 }
 
-searchForm.classList.remove("show-popup");
+modal.classList.add("modal-content-opened")
 
-searchButton.addEventListener("click", function(e) {
-  e.preventDefault();
-  searchForm.classList.toggle("show-popup");
+link.addEventListener("click", function(event){
+event.preventDefault();
+  modal.classList.toggle("modal-content-closed")
 });
 
 adults.adults__lessButton.addEventListener("click", function(e) {
