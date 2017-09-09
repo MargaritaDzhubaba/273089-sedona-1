@@ -890,8 +890,9 @@ input[type="radio"].visually-hidden {
 	        align-items: center;
 
 	width: 100%;
-	min-height: 120px;
+	/*min-height: 120px;*/
 	margin: 0 auto;
+	padding: 36px 0;
 
 	background: #ffffff;
 }
