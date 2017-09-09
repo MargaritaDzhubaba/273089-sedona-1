@@ -408,7 +408,8 @@ input[type="radio"].visually-hidden {
 
 .feature-item p {
 	margin: 0;
-	padding: 0 10px;
+	max-width: 305px;
+	/*padding: 0 10px;*/
 }
 
 .reason-2-flex {
@@ -676,6 +677,8 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	line-height: 26px;
 
+	letter-spacing: 0.4px;
+
 	cursor: pointer;
 }
 
@@ -715,11 +718,11 @@ input[type="radio"].visually-hidden {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 
-	padding: 7px 14px 5px;
+	padding: 10px 14px 9px;
 	padding-right: 40px;
 
 	font-size: 14px;
-	line-height: 26px;
+	line-height: normal;
 	font-weight: 700;
 	font-family: "PT Sans", "Arial", sans-serif;
 
@@ -771,7 +774,7 @@ input[type="radio"].visually-hidden {
 
 .counter input[type="text"] {
 	width: 38px;
-	padding: 6px 5px;
+	padding: 10px 5px 9px;
 	text-align: center;
 
 	cursor: pointer;
